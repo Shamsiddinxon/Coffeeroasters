@@ -1,6 +1,15 @@
-.collaction-box {
-    margin: 0;
-    padding: 126px 0 200px 0;
+.collaction{
+    // position: relative;
+    // background-image: url(../imiges/Group13.png);
+    // background-repeat: no-repeat;
+    // padding-top: 126px;
+}
+
+.collaction__box {
+    margin-bottom: 200px;
+    margin: 0 0 200px;
+    padding-top: 126px;
+    position: relative;
     background-image: url(../imiges/Group13.png);
     background-repeat: no-repeat;
 }
@@ -22,9 +31,7 @@
     list-style: none;
 }
 
-.collaction__item:hover {
-    box-shadow: 0 0 10px 10px rgba(211, 211, 211, 0.2);
-}
+
 
 .collaction__item-title {
     margin: 0;
