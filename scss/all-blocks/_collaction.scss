@@ -1,52 +1,55 @@
-.collaction-container {
-    width: 1151px;
-    margin: auto;
-    padding: 0 20px;
-  }
+.collaction {
+
+    &__container {
+        width: 1151px;
+        margin: auto;
+        padding: 0 20px;
+    }
 
 
-.collaction__box {
-    margin-bottom: 200px;
-    margin: 0 0 200px;
-    padding-top: 126px;
-    position: relative;
-    background-image: url(../imiges/Group13.png);
-    background-repeat: no-repeat;
-}
+    &__box {
+        margin-bottom: 200px;
+        margin: 0 0 200px;
+        padding-top: 126px;
+        position: relative;
+        background-image: url(../imiges/Group13.png);
+        background-repeat: no-repeat;
+    }
 
 
-.collaction__list {
-    display: flex;
-    margin: 0;
-    margin-bottom: 200px;
-    padding: 0;
-}
+    &__list {
+        display: flex;
+        margin: 0;
+        margin-bottom: 200px;
+        padding: 0;
+    }
 
-.collaction__item {
-    display: flex;
-    margin: 15px;
-    flex-direction: column;
-    align-items: center;
-    width: 255px;
-    list-style: none;
-}
+    &__item {
+        display: flex;
+        margin: 15px;
+        flex-direction: column;
+        align-items: center;
+        width: 255px;
+        list-style: none;
+    }
 
 
 
-.collaction__item-title {
-    margin: 0;
-    font-family: Fraunces;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
-    color: #333D4B;
-}
+    &__item-title {
+        margin: 0;
+        font-family: Fraunces;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #333D4B;
+    }
 
-.collaction__item-desc {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: #333D4B;
+    &__item-desc {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #333D4B;
+    }
 }

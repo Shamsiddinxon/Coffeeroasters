@@ -1,23 +1,23 @@
 .commitment {
     margin-bottom: 284px;
-}
 
-.commitment-container {
-    display: flex;
-    align-items: center;
-    max-width: 1150px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-}
 
-.commitment__img {
-    margin: 0;
-    margin-right: 125px;
-    border-radius:8px;
+  &__container {
+      display: flex;
+      align-items: center;
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
   }
 
-  .commitmant__title {
+  &__img {
+      margin: 0;
+      margin-right: 125px;
+      border-radius:8px;
+  }
+
+  &__title {
     margin: 0;
     margin-bottom: 32px;
     font-family: Fraunces;
@@ -28,7 +28,7 @@
     color: #333D4B;
   }
 
-  .commitment__desc{
+  &__desc{
     width: 540px;
     margin: 0;
     font-weight: normal;
@@ -36,3 +36,4 @@
     line-height: 26px;
     color: #333D4B;
   }
+}

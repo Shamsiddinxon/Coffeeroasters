@@ -13,13 +13,14 @@
     }
   }
 
-  .workc-container {
+.works{
+  &__container {
     width: 1150px;
     margin: 0 auto;
     padding: 0 20px;
   }
 
-  .works__header {
+  &__header {
     margin: 0;
     margin-bottom: 80px;
     font-family: Fraunces;
@@ -30,14 +31,14 @@
     color: #83888F;
   }
 
-  .works__line-box {
+  &__line-box {
     display: flex;
     align-items: center;
     position: relative;
     margin-bottom: 67px;
   }
 
-  .works__line-box::before {
+  &__line-box::before {
     content: "";
     position: absolute;
     left: 1.5%;
@@ -46,37 +47,9 @@
     border: 1px solid #fdd6ba;
     background-color: #fdd6ba;
   }
-  .oval {
-    margin: 0;
-    display: inline-block;
-    z-index: 2;
-    width: 31px;
-    height: 31px;
-    border-radius: 50%;
-    background: #fefcf7;
-    border: 2px solid #0e8784;
-  }
 
-  .oval2 {
-    margin: 0;
-    display: inline-block;
-    z-index: 2;
-    width: 31px;
-    height: 31px;
-    border-radius: 50%;
-    border: 2px solid #0e8784;
-    background: #2C343E;
-  }
 
-  .oval1, .oval3 {
-    margin-left: 361px;
-  }
-
-  .oval3 {
-    margin-left: 361px;
-  }
-
-  .works__list {
+  &__list {
     display: flex;
     flex-wrap: wrap;
     margin: -47px;
@@ -85,19 +58,19 @@
 
   }
 
-  .works__item {
+  &__item {
     width: 283px;
     margin: 0;
     margin: 45px 45px 0;
     list-style: none;
   }
 
-  .works__item-img {
+  &__item-img {
     margin: 0;
     margin-bottom: 38px;
   }
 
-  .works__item-title {
+  &__item-title {
     width: 210px;
     margin: 0;
     margin-bottom: 42px;
@@ -111,10 +84,10 @@
 
 
 
-  .works__item-title1{
+  &__item-title1{
     color: #fff;
   }
-  .works__item-desc {
+  &__item-desc {
     margin: 0;
     width: 285px;
     font-weight: normal;
@@ -123,12 +96,44 @@
     color: #333D4B;
   }
 
-  .works__item-desc1 {
+  &__item-desc1 {
       color:#fff;
-    }
+  }
 
-  .works__wrapper1   {
+  &__wrapper1   {
     padding: 100px 0 99px;
     border-radius: 10px;
     background: #2C343E;
   }
+}
+
+
+.oval {
+  margin: 0;
+  display: inline-block;
+  z-index: 2;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  background: #fefcf7;
+  border: 2px solid #0e8784;
+}
+
+.oval2 {
+  margin: 0;
+  display: inline-block;
+  z-index: 2;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  border: 2px solid #0e8784;
+  background: #2C343E;
+}
+
+.oval1, .oval3 {
+  margin-left: 361px;
+}
+
+.oval3 {
+  margin-left: 361px;
+}

@@ -1,4 +1,6 @@
 .cards {
+    padding-bottom: 168px;
+
     &__box{
         display:flex;
         justify-content: space-between;
@@ -28,7 +30,7 @@
 
     }
 
-    &__title>span {
+    &__title {
         margin-right: 24px;
     }
 
@@ -57,7 +59,6 @@ input:disabled + .left__controller{
 
 .right {
     width: 730px;
-
     &__title{
         margin: 0;
         margin-bottom: 56px;
@@ -112,6 +113,60 @@ input:checked + .right__controller {
     color: white;
 }
 
-.right__controller:hover {
-    background: #FDD6BA;
-  }
+
+
+.right {
+
+
+    &__bottom {
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-end;
+
+    }
+
+    &__bottom--box {
+        margin: 0;
+        margin-bottom: 40px;
+        padding: 27px 64px;
+        background-color: #2C343E;
+        border-radius:10px;
+    }
+
+    &__bottom--title {
+        margin: 0;
+        margin-bottom: 8px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+
+    &__bottom--desc {
+        margin: 0;
+        font-family: Fraunces;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 40px;
+        color: #FFFFFF;
+    }
+
+    &__bottom--desc1 {
+        color: #0E8784;
+    }
+
+    &__controller:hover {
+        background: #FDD6BA;
+    }
+
+
+}
+
+.button--bottom {
+        width: 210px;
+        margin: 0;
+        margin-left: auto;
+    }
