@@ -3,20 +3,23 @@
     padding-bottom: 351px;
 
 
-  &__container {
-    width: 1320px;
+  &__container{
+    width: 100%;
+    max-width: 1320px;
     margin: 0 auto;
     padding: 0 20px;
   }
 
   &__bottom-container {
-    width: 1150px;
+    width: 100%;
+    max-width: 1150px;
     margin: 0 auto;
     padding: 0 20px;
     }
 
   &__box {
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     margin: 0;
     padding: 0 0 288px;
     background: #2c343e;
@@ -26,7 +29,7 @@
   &__title {
     margin-bottom: 32px;
     padding-top: 100px;
-    Font-family: Fraunces;
+    font-family: Fraunces;
     font-style: normal;
     font-weight: 900;
     font-size: 40px;
@@ -38,7 +41,8 @@
   &__desc {
     margin: 0 auto;
     margin-bottom: 86px;
-    width: 540px;
+    width: 100%;
+    max-width: 540px;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
@@ -54,11 +58,13 @@
   &__list {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    // flex-wrap: ;
     position: absolute;
-    margin: 0;
+    margin: auto;
     padding: 0;
     top: 86px;
+    left: 30px;
+    right: 30px;
     margin: -15px;
   }
 
@@ -68,15 +74,18 @@
     align-items: center;
     margin: 15px;
     padding: 72px 47px 48px 47px;
-    width: 350px;
+    width: 100%;
+    max-width: 345px;
     list-style: none;
     background: #0E8784;
     border-radius: 8px;
   }
 
   &__item-img {
-    width: 72px;
-    height: 72px;
+    width: 100%;
+    max-width: 72px;
+    height: 100%;
+    max-height: 72px;
     margin-bottom: 56px;
   }
 
@@ -95,11 +104,65 @@
 
   &__item-desc {
     margin: 0;
-    width: 255px;
+    width: 100%;
+    max-width: 255px;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
     color: #FEFCF7;
   }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .servises__item {
+    padding: 45px 30px 30px;
+  }
+
+  .servises__bottom {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .servises__item-img {
+    margin-bottom: 30px;
+  }
+
+  .servises__item {
+    // width: 250px;
+    padding:  20px 15px;
+  }
+}
+
+@media only screen and (max-width:924px) {
+  .servises {
+   &__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // flex-wrap: ;
+    position: absolute;
+    margin: auto;
+    padding: 0;
+    top: 50%;
+    left: 56px;
+    right: 56px;
+    margin: -15px
+  }
+
+  &__item {
+    max-width: 700px;
+    width: 100%;
+  }
+
+  &__box {
+    padding-bottom: 368px;
+  }
+
+  &__item-img {
+
+  }
+}
 }

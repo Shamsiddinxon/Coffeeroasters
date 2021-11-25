@@ -4,14 +4,16 @@
     margin: 0 0 136px;
     padding:  117px 0 116px 86px;
     background-image: url(../imiges/Bitmap.jpg);
+    background-size:cover;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: top right;
     border-radius: 10px;
   }
 
   &__wrap {
     padding: 0;
-    width: 493px;
+    width: 100%;
+    max-width: 493px;
   }
 
   &__titele {
@@ -30,11 +32,16 @@
     margin: 0;
     margin-bottom: 71px;
     padding: 0;
-    width: 445px;
+    width: 100%;
+    max-width: 445px;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
     color: #FEFCF7;
     opacity: 0.8;
   }
+}
+
+@media only screen and (max-width:924px) {
+
 }

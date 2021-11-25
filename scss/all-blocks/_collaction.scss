@@ -1,7 +1,8 @@
 .collaction {
 
     &__container {
-        width: 1151px;
+        width: 100%;
+        max-width: 1151px;
         margin: auto;
         padding: 0 20px;
     }
@@ -14,6 +15,7 @@
         position: relative;
         background-image: url(../imiges/Group13.png);
         background-repeat: no-repeat;
+        background-size:100%;
     }
 
 

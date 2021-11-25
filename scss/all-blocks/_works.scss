@@ -6,7 +6,8 @@
     margin-bottom: 159px;
 
     &__container {
-      width: 1150px;
+      width: 100%;
+      max-width: 1150px;
       margin: 0 auto;
       padding: 0 20px;
 
@@ -15,7 +16,8 @@
 
 .works{
   &__container {
-    width: 1150px;
+    width: 100%;
+    max-width: 1150px;
     margin: 0 auto;
     padding: 0 20px;
   }
@@ -39,10 +41,11 @@
   }
 
   &__line-box::before {
-    content: "";
+    content:"";
     position: absolute;
     left: 1.5%;
-    width: 765px;
+    width: 100%;
+    max-width: 765px;
     height: 1px;
     border: 1px solid #fdd6ba;
     background-color: #fdd6ba;
@@ -51,7 +54,7 @@
 
   &__list {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     margin: -47px;
     margin-bottom: 64px;
     padding: 0;
@@ -59,7 +62,8 @@
   }
 
   &__item {
-    width: 283px;
+    width: 100%;
+    max-width: 283px;
     margin: 0;
     margin: 45px 45px 0;
     list-style: none;
@@ -71,7 +75,8 @@
   }
 
   &__item-title {
-    width: 210px;
+    width: 100%;
+    max-width: 210px;
     margin: 0;
     margin-bottom: 42px;
     font-family: Fraunces;
@@ -89,7 +94,8 @@
   }
   &__item-desc {
     margin: 0;
-    width: 285px;
+    width: 100%;
+    max-width: 285px;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
