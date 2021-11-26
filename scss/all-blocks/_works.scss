@@ -15,11 +15,9 @@
   }
 
 .works{
-  &__container {
-    width: 100%;
-    max-width: 1150px;
-    margin: 0 auto;
-    padding: 0 20px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
   }
 
   &__header {
@@ -113,6 +111,10 @@
     border-radius: 10px;
     background: #2C343E;
   }
+
+  &__button {
+    width: 220px;
+  }
 }
 
 
@@ -202,7 +204,14 @@
 
 
 @media only screen and (max-width:768px) {
-  .works__list {
-    margin-top: 100px;
+  .works {
+    &__list {
+      margin-top: 100px;
+    }
+
+    &__wrapper {
+      display: flex;
+      align-items:center;
+    }
   }
 }

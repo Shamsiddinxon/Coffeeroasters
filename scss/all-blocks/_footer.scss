@@ -78,3 +78,38 @@
     opacity: 0.6;
   }
 }
+
+
+
+@media only screen and(max-width:785px) {
+  .footer {
+    &__container, &__left {
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items:center;
+    }
+
+    &__link {
+      margin-bottom: 32px;
+    }
+
+    &__right {
+      margin-right: auto;
+      padding-right:auto;
+    }
+
+    &__list {
+      margin:0 0 0 33px;
+      margin-bottom: 65px;x {
+        margin: ;
+      }
+    }
+
+    &__icon-list {
+      margin: 0 0;
+      text-align: center;
+    }
+  }
+
+}
