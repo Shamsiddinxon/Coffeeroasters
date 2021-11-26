@@ -1,16 +1,19 @@
 
 .gread {
   &__walper {
+
     margin: 0 0 136px;
-    padding:  117px 0 116px 86px;
+    padding:  117px 86px 116px 86px;
     background-image: url(../imiges/Bitmap.jpg);
     background-size:cover;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: center;
     border-radius: 10px;
   }
 
   &__wrap {
+    display: flex;
+    flex-direction: column;
     padding: 0;
     width: 100%;
     max-width: 493px;
@@ -40,8 +43,45 @@
     color: #FEFCF7;
     opacity: 0.8;
   }
+
+  &__button {
+    width: 217px;
+  }
 }
 
-@media only screen and (max-width:924px) {
+@media only screen and (max-width:700px) {
+ .gread {
+  &__walper {
+    background-position:-500px 0;
+  }
 
+  &__titele {
+     font-size: 48px;
+     line-height: 48px;
+  }
+ }
 }
+
+@media only screen and (max-width:540px) {
+  .gread {
+    &__walper {
+      padding: 99px 25px;
+      background-position:-560px 0px;
+
+    }
+
+    &__wrap {
+      align-items:center;
+    }
+
+    &__titele {
+      text-align: center;
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    &__desc {
+      text-align: center;
+    }
+  }
+ }

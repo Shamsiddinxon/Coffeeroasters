@@ -21,7 +21,7 @@
     width: 100%;
     max-width: 1280px;
     margin: 0;
-    padding: 0 0 288px;
+    padding: 0 24px 288px;
     background: #2c343e;
     border-radius: 10px;
   }
@@ -116,6 +116,15 @@
 
 
 @media only screen and (max-width: 1200px) {
+  // .servises__box {
+  //   // padding-bottom: 238px;
+  // }
+
+  .servises__list {
+    position: absolute;
+    top:102px;
+  }
+
   .servises__item {
     padding: 45px 30px 30px;
   }
@@ -126,8 +135,17 @@
 }
 
 @media only screen and (max-width: 1080px) {
+  .servises__box {
+    padding-bottom: 200px;
+  }
+
   .servises__item-img {
     margin-bottom: 30px;
+  }
+
+  .servises__list {
+    position: absolute;
+    top: 55px;
   }
 
   .servises__item {
@@ -136,33 +154,112 @@
   }
 }
 
-@media only screen and (max-width:924px) {
+@media only screen and (max-width:930px) {
   .servises {
    &__list {
     display: flex;
-    align-items: center;
     flex-direction: column;
     // flex-wrap: ;
     position: absolute;
     margin: auto;
     padding: 0;
-    top: 50%;
+    top: 50px;
     left: 56px;
     right: 56px;
     margin: -15px
   }
 
   &__item {
+    // justify-content: center;
+    flex-direction: row;
+    padding: 41px 48px 41px 70px;
     max-width: 700px;
     width: 100%;
   }
 
+  &__item-title, &__item-desc {
+    text-align: left;
+  }
+
   &__box {
     padding-bottom: 368px;
+
   }
 
   &__item-img {
+    margin: 0 55px 0  0;
+  }
 
+  &__item-desc {
+
+    max-width: 344px;
+    width: 100%;
   }
 }
+}
+
+@media only screen and (max-width:730px) {
+  .servises {
+    &__item {
+      padding: 40px 30px 30px 40px ;
+    }
+
+    &__item-title {
+      margin-bottom: 15px;
+    }
+
+    &__item-img {
+      margin: 0 30px 0  0;
+    }
+  }
+
+}
+
+@media only screen and (max-width:553px) {
+  .servises {
+     &__item {
+      flex-direction: column;
+    }
+
+    &__item-img {
+      margin: 0 0  20px  0;
+    }
+
+    &__item-desc, &__item-title  {
+      text-align: center;
+    }
+
+    &__list {
+      top: -55px;
+      left: 24px;
+      right: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width:489px) {
+.servises__list {
+  position: absolute;
+  top: -100px;
+}
+}
+
+@media only screen and (max-width:383px) {
+
+  .servises__list {
+    position: absolute;
+    top: -150px;
+  }
+}
+
+@media only screen and (max-width:342px) {
+
+
+  .servises__list {
+    position: absolute;
+    top: -170px;
+  }
+
+
+
 }
