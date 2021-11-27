@@ -66,13 +66,13 @@
     .collaction {
         &__list {
             flex-direction: column;
+            padding:0 20px 0 0px;
         }
 
         &__item {
             flex-direction: row;
             width: 100%;
             max-width: 573px;
-
         }
 
         &__item-desc,&__item-title {
@@ -81,9 +81,41 @@
 
 
         &__img {
-            width: 40%;
+            max-width: 50%;
+        }
+    }
+}
+
+@media only screen and(max-width:480px) {
+    .collaction {
+        &__list {
+            align-items: center;
+
         }
 
+        &__item {
+            flex-direction: column;
+            max-width: 300px;
+        }
+
+        &__item-desc,&__item-title {
+            text-align: center;
+        }
+
+        &__img {
+            max-width: 400px;
+            margin-bottom: 24px;
+        }
 
     }
+
+
+
+
+
+
+
+
+
+
 }

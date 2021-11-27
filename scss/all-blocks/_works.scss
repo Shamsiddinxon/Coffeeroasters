@@ -43,7 +43,7 @@
     position: absolute;
     left: 1.5%;
     width: 100%;
-    max-width: 69%;
+    max-width: 67%;
     height: 1px;
     border: 1px solid #fdd6ba;
     background-color: #fdd6ba;
@@ -150,6 +150,7 @@
 }
 
 @media only screen and (max-width:870px) {
+
   .works {
   &__item + &__item {
     margin-left: 20px;
@@ -159,8 +160,13 @@
 
 @media only screen and (max-width:768px) {
   .works {
+    &__wrapper {
+      display: flex;
+      align-items:center;
+    }
+
     &__header {
-      display: none;
+      margin:0;
     }
 
     &__line-box {
@@ -168,7 +174,7 @@
     }
 
     &__list {
-      // max-width: 400px;
+      margin-top: 60px;
       text-align: center;
       align-items:center;
       flex-direction: column;
@@ -195,23 +201,14 @@
       margin: 0;
       max-width: 100%;
     }
-
-
-
-
   }
 }
 
 
 @media only screen and (max-width:768px) {
   .works {
-    &__list {
-      margin-top: 100px;
-    }
 
-    &__wrapper {
-      display: flex;
-      align-items:center;
-    }
+
+
   }
 }

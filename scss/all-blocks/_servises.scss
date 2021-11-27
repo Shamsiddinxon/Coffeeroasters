@@ -58,7 +58,6 @@
   &__list {
     display: flex;
     align-items: center;
-    // flex-wrap: ;
     position: absolute;
     margin: auto;
     padding: 0;
@@ -170,7 +169,6 @@
   }
 
   &__item {
-    // justify-content: center;
     flex-direction: row;
     padding: 41px 48px 41px 70px;
     max-width: 700px;
@@ -183,7 +181,6 @@
 
   &__box {
     padding-bottom: 368px;
-
   }
 
   &__item-img {
@@ -217,6 +214,8 @@
 
 @media only screen and (max-width:553px) {
   .servises {
+    padding-bottom: 500px;
+
      &__item {
       flex-direction: column;
     }
@@ -238,26 +237,49 @@
 }
 
 @media only screen and (max-width:489px) {
-.servises__list {
-  position: absolute;
-  top: -100px;
+.servises {
+  padding-bottom: 520px;
+  &__box {
+    padding-bottom: 450px;
+  }
+
+  &__list {
+    position: absolute;
+    top: 0px;
+  }
+
 }
 }
 
 @media only screen and (max-width:383px) {
 
+  .servises {
+    padding-bottom: 600px;
+  }
   .servises__list {
     position: absolute;
-    top: -150px;
+    top: -50px;
   }
 }
 
 @media only screen and (max-width:342px) {
 
+  .servises {
+    padding-bottom: 500px;
 
+    &__list {
+      top: -55px;
+      left: 15px;
+      right: 15px;
+    }
+
+    &__item{
+      padding: 20px 15px;
+    }
+  }
   .servises__list {
     position: absolute;
-    top: -170px;
+    top: -70px;
   }
 
 
