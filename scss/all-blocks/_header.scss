@@ -90,7 +90,7 @@
         width: 100%;
         margin: 0 auto;
         // background-color:#0E8784;
-        background-image:url(/imiges/Aboutsection.jpg);
+        background-image:url(../imiges/Aboutsection.jpg);
         background-repeat:no-repeat;
         background-size: cover;
         opacity: 0.99;
@@ -113,9 +113,14 @@
 
     .header__open .sitenav__linc {
         color: white;
+        font-family: Fraunces;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        // line-height: 72px;
     }
 
     .header__open .header__hamburger {
-        background-image:url(/imiges/times-solid.svg);
+        background-image:url(../imiges/times-solid.svg);
     }
 }
