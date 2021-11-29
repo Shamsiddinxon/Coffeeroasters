@@ -89,12 +89,14 @@
         max-width :85%;
         width: 100%;
         margin: 0 auto;
-        background-color:#0E8784;
+        // background-color:#0E8784;
+        background-image:url(/imiges/Aboutsection.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
+        opacity: 0.99;
         color:white;
         border-radius: 10px;
-        border: 1px solid #043c3b;
-
-
+        border: 1px solid #0E8784;
     }
 
     .header__open .sitenav__list {
@@ -111,5 +113,9 @@
 
     .header__open .sitenav__linc {
         color: white;
+    }
+
+    .header__open .header__hamburger {
+        background-image:url(/imiges/times-solid.svg);
     }
 }
