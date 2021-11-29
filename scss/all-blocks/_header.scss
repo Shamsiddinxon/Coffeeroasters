@@ -21,7 +21,7 @@
         background-repeat: no-repeat;
         background-color: #fff;
         border:none;
-
+        transition: 0.2s;
     }
 }
 
@@ -81,19 +81,26 @@
         display: flex;
         justify-content: center;
         position: absolute;
-        top: 100%;
-        left: 0;
-        max-width :500px;
+        top: 58px;
+        left: 10px;
+        right:10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width :85%;
         width: 100%;
         margin: 0 auto;
-        background-color:dodgerblue;
+        background-color:#0E8784;
         color:white;
+        border-radius: 10px;
+        border: 1px solid #043c3b;
+
+
     }
 
     .header__open .sitenav__list {
         align-items:center;
         flex-direction: column;
-        padding: 10px 0;
+        padding: 15px 0;
         color:white;
     }
 
